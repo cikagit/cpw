@@ -1,0 +1,1259 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, Traditional Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPCIONES DIALOG 0, 0, 355, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definición de Colores de las órdens"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,314,10,35,14
+    RTEXT           "HECHO",IDC_STATIC,81,10,103,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_0,189,9,29,10
+    LTEXT           "Desde Max. positivo hasta :",IDC_STATIC,38,25,95,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_1,189,24,29,10
+    RTEXT           "NO FAB.",IDC_STATIC,82,86,102,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_2,189,39,29,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_3,189,54,29,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_4,189,69,29,10
+    PUSHBUTTON      "Cambiar",IDC_COLOR_5,189,84,29,10
+    EDITTEXT        IDC_MARGEN_MIN_2,145,24,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MARGEN_MIN_3,145,38,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MARGEN_MIN_4,145,52,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MARGEN_MAX_3,71,37,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MARGEN_MAX_4,71,51,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MARGEN_MAX_5,71,66,39,13,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Desde:",IDC_STATIC,41,39,27,10
+    LTEXT           "Desde:",IDC_STATIC,40,53,27,10
+    LTEXT           "Desde:",IDC_STATIC,40,68,27,10
+    LTEXT           "Hasta:",IDC_STATIC,115,40,27,10
+    LTEXT           "Hasta:",IDC_STATIC,115,53,27,10
+    LTEXT           "Hasta Min. negativo.",IDC_STATIC,115,68,70,10
+    CONTROL         "",IDC_RICHEDIT1,"RICHEDIT",TCS_RAGGEDRIGHT,225,7,61,12
+    CONTROL         "",IDC_RICHEDIT2,"RICHEDIT",TCS_RAGGEDRIGHT,226,22,61,12
+    CONTROL         "",IDC_RICHEDIT3,"RICHEDIT",TCS_RAGGEDRIGHT,226,37,61,12
+    CONTROL         "",IDC_RICHEDIT4,"RICHEDIT",TCS_RAGGEDRIGHT,226,52,61,12
+    CONTROL         "",IDC_RICHEDIT5,"RICHEDIT",TCS_RAGGEDRIGHT,226,67,61,12
+    CONTROL         "",IDC_RICHEDIT6,"RICHEDIT",TCS_RAGGEDRIGHT,226,82,61,12
+END
+
+IDD_LISTA DIALOG 0, 0, 467, 279
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Referencias a Programar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,404,260,27,14
+    CONTROL         "List1",IDC_LISTA,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,6,454,247
+    CONTROL         "Sólo No Programadas",IDC_BUT_NOPROG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,261,117,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_OPCIONES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_LISTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Spain, Traditional Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexico) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSERT_MAQ DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Insertar Máquina"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    COMBOBOX        IDC_INSMAQ_MAQ,13,16,110,66,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_ANTES_DESPUES,121,42,58,40
+    CONTROL         "Antes",IDC_INSMAQ_ANTES,"Button",BS_AUTORADIOBUTTON | WS_GROUP,129,50,46,10
+    CONTROL         "Después",IDC_INSMAQ_DESPUES,"Button",BS_AUTORADIOBUTTON,129,63,47,12
+END
+
+IDD_AJUSTAR DIALOG 0, 0, 221, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ajustar datos del Bloque"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,164,9,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,26,50,14
+    EDITTEXT        IDC_CANT_ACT,13,16,58,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CANT_NUE,83,16,65,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EXISTENCIAS,7,50,42,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MATERIAL,58,51,41,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LOTE,106,50,41,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_RATIO,157,50,6,13,ES_READONLY | ES_NUMBER | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Spin3",IDC_SPIN_RATIO,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,203,49,11,14
+    EDITTEXT        IDC_CAD_ANT,48,74,40,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CAD_NUE,95,73,6,13,ES_READONLY | ES_NUMBER | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Spin4",IDC_SPIN_CAD,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,139,73,11,14
+    EDITTEXT        IDC_HORAS,157,74,6,13,ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Spin2",IDC_SPIN_HORAS,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,203,73,11,14
+    LTEXT           "Cantidad",IDC_STATIC,13,7,56,8
+    LTEXT           "Nueva Cantidad",IDC_STATIC,85,7,63,8
+    LTEXT           "Material",IDC_STATIC,58,43,30,8
+    LTEXT           "Ratio",IDC_STATIC,165,42,30,8
+    LTEXT           "Existencias",IDC_STATIC,7,42,43,8
+    LTEXT           "Cadencia",IDC_STATIC,47,66,41,8
+    LTEXT           "Cadencia",IDC_STATIC,99,66,30,8
+    LTEXT           "Horas",IDC_STATIC,164,66,30,8
+    LTEXT           "Lote",IDC_STATIC,106,42,15,8
+    EDITTEXT        IDC_HORAS_D,164,73,41,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_RATIO_D,165,49,39,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CAD_D,103,74,36,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_INSERT_MAQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_AJUSTAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Mexico) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEBUG DIALOG 0, 0, 492, 286
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mensaje"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,435,7,50,14
+    LISTBOX         IDC_DEBUGLIST,7,7,419,272,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOG 0, 0, 217, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de cpw..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "cpw Versión 1.0 (Cikautxo)",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "Aceptar",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_ESCALA DIALOG 0, 0, 182, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cambiar escala"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,7,39,14
+    PUSHBUTTON      "Cancel",IDCANCEL,136,24,39,14
+    EDITTEXT        IDC_ESCALA,62,14,45,15,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_ESCALA,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,108,13,10,17
+END
+
+IDD_CARGAINICIAL DIALOGEX 0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "Bloque:",IDC_STATIC,22,16,34,15,0,WS_EX_RIGHT
+    EDITTEXT        IDC_DESDE_ORDEN,70,43,43,15,ES_AUTOHSCROLL
+    LTEXT           "Desde orden:",IDC_STATIC,18,46,49,12,0,WS_EX_RIGHT
+    EDITTEXT        IDC_HASTA_ORDEN,71,61,43,15,ES_AUTOHSCROLL
+    LTEXT           "Hasta orden:",IDC_STATIC,17,62,49,15,0,WS_EX_RIGHT
+    COMBOBOX        IDC_BLOQUE,63,15,54,76,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ORDEN DIALOGEX 0, 0, 443, 352
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edición de Orden"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_MAQMOL,7,33,73,113,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CANTIDAD,113,1,42,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CADENCIA,212,54,37,13,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_FECINI,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,211,20,73,13
+    EDITTEXT        IDC_TIEMPO,343,54,32,12,ES_CENTER | ES_AUTOHSCROLL
+    COMBOBOX        IDC_INSMAQ,29,151,58,71,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_FECFAB,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,105,23,61,12
+    EDITTEXT        IDC_FABRICADAS,132,39,35,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOTE,358,19,30,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CHATARRAS,358,34,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FECHA_FIJA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,289,20,9,9
+    CONTROL         "Check1",IDC_TIEMPO_FIJO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,382,54,8,8
+    DEFPUSHBUTTON   "OK",IDOK,387,78,47,24
+    PUSHBUTTON      "Cancelar",IDCANCEL,387,105,47,13
+    PUSHBUTTON      "Finalizar",IDC_FINALIZAR,387,121,47,13
+    PUSHBUTTON      "Borrar",IDC_BORRAR,387,142,47,13
+    COMBOBOX        IDC_MOLDE,24,1,57,58,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Inicio :",IDC_STATIC,185,20,24,10
+    LTEXT           "Tiempo:",IDC_STATIC,314,54,28,10
+    LTEXT           "Final:",IDC_STATIC,183,36,24,10
+    LTEXT           "Cant.:",IDC_STATIC,89,2,20,8
+    LTEXT           "Entrega:",IDC_STATIC,323,1,8,10,NOT WS_VISIBLE
+    LISTBOX         IDC_MAQUINAS,89,70,292,93,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_FECENT,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | NOT WS_VISIBLE,323,0,9,12
+    LTEXT           "(fijo)",IDC_STATIC,299,19,14,11
+    GROUPBOX        "Fabricación Parcial",IDC_STATIC,85,14,87,54
+    EDITTEXT        IDC_RESTANTES,132,54,36,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "A:",IDC_STATIC,91,23,10,11
+    LTEXT           "Fabricadas:",IDC_STATIC,89,39,41,10
+    LTEXT           "Restantes:",IDC_STATIC,89,54,43,11
+    LTEXT           "(fijo)",IDC_STATIC,391,52,15,10
+    LTEXT           "Cadencia:",IDC_STATIC,176,54,35,12
+    EDITTEXT        IDC_INACTIVIDAD,280,54,27,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Inact.:",IDC_STATIC,253,54,24,11
+    GROUPBOX        "",IDC_STATIC,321,12,112,40
+    GROUPBOX        "",IDC_STATIC,179,12,142,40
+    CONTROL         "Selec.",IDC_SELECTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,394,63,36,10
+    LTEXT           "Máquina / Molde",IDC_STATIC,9,20,65,11
+    LTEXT           "Lote (Kg):",IDC_STATIC,324,22,32,8
+    LTEXT           "%Chat.",IDC_STATIC,324,36,29,11
+    LTEXT           "Molde :",IDC_STATIC,1,3,20,11
+    PUSHBUTTON      "Ajustar",IDC_AJUSTAR,392,23,38,12,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Máq.:",IDC_STATIC,5,151,20,11
+    EDITTEXT        IDC_MEZCLA,33,175,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Mezcla:",IDC_STATIC,1,172,27,10
+    EDITTEXT        IDC_MEZCLAKILOS,95,175,42,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Peso (g)",IDC_STATIC,303,165,32,9
+    EDITTEXT        IDC_PESOGRAMOS,301,175,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CAVIDADES,343,175,45,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cavidades",IDC_STATIC,343,164,40,10
+    LTEXT           "Consumo/h (Kg)",IDC_STATIC,136,166,57,8
+    EDITTEXT        IDC_CONSUMO,141,175,40,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Kilos",IDC_STATIC,109,167,19,8
+    EDITTEXT        IDC_RESTHORAS,185,175,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Restantes",IDC_STATIC,206,167,38,8
+    LTEXT           "h.",IDC_STATIC,219,176,8,8
+    EDITTEXT        IDC_RESTCANT,229,175,51,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cant",IDC_STATIC,281,176,17,8
+    PUSHBUTTON      "Fabricada",IDC_FABRICADA,387,158,47,13
+    PUSHBUTTON      "Ajustar",IDC_AJUSTAR_A_MEZCLA,263,166,25,8
+    EDITTEXT        IDC_CANT_TOT,181,1,38,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIEMPO_TOT,286,36,32,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "DateTimePicker1",IDC_FECFIN,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,211,36,73,13
+    EDITTEXT        IDC_TIRADAS,281,1,37,13,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Tiradas:",IDC_STATIC,245,1,35,12
+    LTEXT           "Tot.:",IDC_STATIC,160,2,16,8
+    LISTBOX         IDC_ACABADO,12,278,374,74,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CADENCIA_ACABADO,392,299,46,15,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Personas:",IDC_STATIC,337,1,35,12
+    EDITTEXT        IDC_PERSONAS,376,0,37,13,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "P/H Acabado",IDC_STATIC,393,277,39,16
+    LISTBOX         IDC_COMPONENTES,15,198,182,73,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Componentes",IDC_STATIC,14,188,68,10
+    LISTBOX         IDC_MOLDE_DETALLE,214,198,170,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Detalle Molde",IDC_STATIC,213,188,68,10
+END
+
+IDD_VALIDAR_CAMBIO DIALOG 0, 0, 189, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Validar Cambio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,86,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,85,50,14
+    LTEXT           "¿ Desea cambiar el valor ?",IDC_STATIC,47,5,97,10
+    EDITTEXT        IDC_CAMPO,38,20,95,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "De :",IDC_STATIC,13,23,24,11
+    EDITTEXT        IDC_VALOR_ANTIGUO,3,55,79,15,ES_CENTER | ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VALOR_NUEVO,101,55,82,15,ES_CENTER | ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "-->",IDC_STATIC,87,59,8,11
+    LTEXT           "Valor Nuevo",IDC_STATIC,110,42,50,11
+    LTEXT           "Valor Antiguo",IDC_STATIC,17,41,50,11
+END
+
+IDD_INTR_LONG DIALOG 0, 0, 228, 42
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,22,50,14
+    EDITTEXT        IDC_CAPTION,3,12,85,12,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_LONG_VALUE,97,9,32,15,ES_AUTOHSCROLL
+END
+
+IDD_INTR_DBL DIALOG 0, 0, 183, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DBL_VALUE,89,12,32,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,22,50,14
+    EDITTEXT        IDC_CAPTION,2,14,85,12,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_PRINT DIALOG 0, 0, 322, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PRINT SELECTION"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,265,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,24,50,14
+    CONTROL         "DateTimePicker2",IDC_DESDE_FECHA,"SysDateTimePick32",DTS_APPCANPARSE | WS_TABSTOP,54,93,85,12
+    CONTROL         "DateTimePicker3",IDC_HASTA_FECHA,"SysDateTimePick32",DTS_APPCANPARSE | WS_TABSTOP,185,94,87,13
+    LTEXT           "Desde:",IDC_STATIC,25,94,24,11
+    LTEXT           "Hasta:",IDC_STATIC,159,94,23,11
+    COMBOBOX        IDC_TIPO_LISTADO,68,15,183,100,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tipo de Listado",IDC_STATIC,13,16,53,10
+    COMBOBOX        IDC_DESDE_GFH,66,44,56,102,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HASTA_GFH,154,45,56,108,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DESDE_MAQ,66,63,56,115,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HASTA_MAQ,154,63,56,115,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "GFH Desde:",IDC_STATIC,26,45,39,8
+    LTEXT           "Máquina Desde:",IDC_STATIC,7,63,58,8
+    LTEXT           "Hasta:",IDC_STATIC,128,45,21,8
+    LTEXT           "Hasta:",IDC_STATIC,128,63,21,8
+END
+
+IDD_BUSCAR_ORDEN DIALOG 0, 0, 322, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BUSCAR ORDEN"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,265,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,24,50,14
+    COMBOBOX        IDC_ORDEN,68,15,183,100,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL
+    LTEXT           "Orden a Buscar:",IDC_STATIC,7,16,58,11
+END
+
+IDD_INTR_DATE DIALOG 0, 0, 231, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,173,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,22,50,14
+    EDITTEXT        IDC_CAPTION,2,8,85,12,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,91,7,65,15
+END
+
+IDD_LST_MAQ DIALOGEX 0, 0, 501, 289
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de Máquinas / Órdenes"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,444,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,444,24,50,14
+    CONTROL         "List1",IDC_LSC_MAQORD,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,25,429,257
+    CONTROL         "DateTimePicker1",IDC_FEC_DESDE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,37,7,87,11
+    CONTROL         "DateTimePicker2",IDC_FEC_HASTA,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,153,7,92,11
+    LTEXT           "Desde:",IDC_STATIC,7,7,24,11
+    LTEXT           "Hasta:",IDC_STATIC,127,7,22,11
+    PUSHBUTTON      "Imprimir",IDC_PRINT_MAQORD,455,45,31,23
+    COMBOBOX        IDC_DESDE_MAQ,307,7,47,115,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HASTA_MAQ,389,7,48,115,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Máquina Desde:",IDC_STATIC,246,7,58,9
+    LTEXT           "Hasta:",IDC_STATIC,360,7,21,8
+END
+
+IDD_INTR_STR DIALOG 0, 0, 227, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_STR_VALUE,89,12,76,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,22,50,14
+    EDITTEXT        IDC_CAPTION,2,14,85,12,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_LINEA DIALOG 0, 0, 340, 13
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LIN_MAQ,7,0,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIN_ART,41,0,61,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LIN_MOLDE,107,0,50,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LIN_MEZCLA,159,0,40,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_LIN_CANT,205,0,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIN_CAD,247,0,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIN_HORAS,293,0,40,14,ES_AUTOHSCROLL
+END
+
+IDD_CAMBIO_MOLDE DIALOG 0, 0, 381, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,324,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,324,24,50,14
+    CONTROL         "DateTimePicker1",IDC_FEC_CAMBIO,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,7,4,78,15
+    EDITTEXT        IDC_MAQ_CAMBIO,91,4,54,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOLENT_CAMBIO,152,4,59,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOLSAL_CAMBIO,217,4,59,16,ES_AUTOHSCROLL
+END
+
+IDD_SELEC_EMPRESA DIALOG 0, 0, 322, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SELECCIONAR EMPRESA"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,265,7,50,14
+    COMBOBOX        IDC_EMPRESA,98,15,153,100,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL
+    LTEXT           "Seleccione Empresa:",IDC_STATIC,7,16,77,11
+END
+
+IDD_EXCEL DIALOG 0, 0, 322, 206
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EXPORTAR A EXCEL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,265,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,24,50,14
+    CONTROL         "DateTimePicker2",IDC_DESDE_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,80,114,85,12
+    CONTROL         "DateTimePicker3",IDC_HASTA_FECHA,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,211,115,87,13
+    LTEXT           "Desde:",-1,51,115,24,11
+    LTEXT           "Hasta:",-1,185,115,23,11
+    COMBOBOX        IDC_DESDE_MAQ,126,61,56,115,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HASTA_MAQ,214,61,56,115,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Máquina Desde:",-1,67,61,58,8
+    LTEXT           "Hasta:",-1,188,61,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ESCALA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_CARGAINICIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_ORDEN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 442
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_PRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_BUSCAR_ORDEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_LST_MAQ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 494
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_LINEA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+    END
+
+    IDD_CAMBIO_MOLDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_SELEC_EMPRESA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_EXCEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_DESPL_OF            BITMAP                  "res\\idr_.bmp"
+
+IDB_MOLDE_REP           BITMAP                  "res\\molde_re.bmp"
+
+IDB_MOLDE_EA            BITMAP                  "res\\bmp00001.bmp"
+
+IDB_MOLDE_CF            BITMAP                  "res\\molde_.bmp"
+
+IDB_MOLDE_DP            BITMAP                  "res\\molde_ea.bmp"
+
+IDB_MOLDE_MK19          BITMAP                  "res\\molde_mk.bmp"
+
+IDB_MOLDE               BITMAP                  "res\\molde_cf.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MOVE                CURSOR                  "res\\2401.cur"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\cpw.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.esp\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.esp\\afxdb.rc""           // Database resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\cpw.ico"
+
+IDR_CPWTYPE             ICON                    "res\\cpwDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_RELOAD_DB
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_LISTAR_GRAF
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_EXEC_DB
+    BUTTON      ID_EXEC_SEGUNDO
+    BUTTON      ID_EXEC_MOLDES
+    BUTTON      ID_EXEC_MEZCLAS
+    SEPARATOR
+    BUTTON      ID_ESCALA_AMPLIA
+    BUTTON      ID_ESCALA_ESTRECHA
+END
+
+IDR_DESPL_OF TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PREV_PAGE
+    BUTTON      ID_NEXT_PAGE
+    SEPARATOR
+    BUTTON      ID_PREV_ART
+    BUTTON      ID_NEXT_ART
+    SEPARATOR
+    BUTTON      ID_PREV_SECCION
+    BUTTON      ID_NEXT_SECCION
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Nuevo\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Abrir...\tCtrl+A",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Con&figurar impresora...",    ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Archivo reciente",            ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Salir",                      ID_APP_EXIT
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "Barra de &herramientas",      ID_VIEW_TOOLBAR
+        MENUITEM "Barra de &estado",            ID_VIEW_STATUS_BAR
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "&Acerca de cpw...",           ID_APP_ABOUT
+    END
+    MENUITEM "Test",                        ID_TEST
+END
+
+IDR_CPWTYPE MENU
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "&Nuevo\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Abrir...\tCtrl+A",           ID_FILE_OPEN
+        MENUITEM "&Cerrar",                     ID_FILE_CLOSE
+        MENUITEM "&Guardar\tCtrl+G",            ID_FILE_SAVE
+        MENUITEM "Guardar c&omo...",            ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimir...\tCtrl+I",        ID_FILE_PRINT
+        MENUITEM "&Presentación preliminar",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "Con&figurar impresora...",    ID_FILE_PRINT_SETUP
+        MENUITEM "Exportar a Excel...",         IDD_EXCEL
+        MENUITEM SEPARATOR
+        MENUITEM "Guardar con pedidos...",      ID_ARCHIVO_GUARDARCONPEDIDOS
+        MENUITEM "Abrir con pedidos...",        ID_ARCHIVO_ABRIRCONPEDIDOS
+        MENUITEM SEPARATOR
+        MENUITEM "Archivo reciente",            ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Salir",                      ID_APP_EXIT
+    END
+    POPUP "&Editar"
+    BEGIN
+        MENUITEM "&Deshacer\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cor&tar\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copiar\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "&Pegar\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Opciones...",                 ID_OPCIONES
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "Barra de &herramientas",      ID_VIEW_TOOLBAR
+        MENUITEM "Barra de &estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Escala...",                  ID_ESCALA
+        MENUITEM "Tipo de Letra (Gráfico)...",  ID_TIPO_LETRA
+        MENUITEM "Tipo de Letra (Texto)...",    ID_TIPO_LETRA_TXT
+        MENUITEM "Tipo de Letra (Status)...",   ID_TIPO_LETRA_ST
+        MENUITEM SEPARATOR
+        POPUP "Órdenes de Fabricación"
+        BEGIN
+            MENUITEM "Ordenar por Sección",         ID_OF_ORDEN
+            MENUITEM "Ordenar por Cliente",         ID_CLI_ORDEN
+            MENUITEM SEPARATOR
+            MENUITEM "Sólo ""No Programadas""",     ID_SOLONOPROG
+            MENUITEM "Sólo No Fab",                 ID_SOLONOFAB
+            MENUITEM SEPARATOR
+            MENUITEM "Hasta Fecha...",              ID_OF_HASTAFECHA
+            MENUITEM "Acumulado por fecha",         ID_VER_ACUMFECHA
+        END
+    END
+    POPUP "&Programa"
+    BEGIN
+        MENUITEM "&Recalcular",                 ID_RECALCULAR
+        MENUITEM SEPARATOR
+        MENUITEM "Sacar Ascii",                 ID_SACAR_ASCII
+        MENUITEM SEPARATOR
+        POPUP "Descontar Listado Valorado"
+        BEGIN
+            MENUITEM "Para Cikautxo",               ID_DESCONTAR_CIKA
+            MENUITEM "Para los demás",              ID_DESCONTAR_OTROS
+        END
+        MENUITEM "Cambiar Fecha Inicio",        ID_CAMBIAR_FECHA_INICIO
+        MENUITEM "Cambiar FechaFin",            ID_CAMBIAR_FECHA_FIN
+        MENUITEM "Seleccionar hasta fecha...",  ID_SELEC_FECHA
+        MENUITEM "Ordenar máquinas",            ID_ORDENAR_MAQUINAS
+    END
+    POPUP "Ven&tana"
+    BEGIN
+        MENUITEM "&Nueva ventana",              ID_WINDOW_NEW
+        MENUITEM "&Cascada",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaico",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "&Organizar iconos",           ID_WINDOW_ARRANGE
+    END
+    POPUP "&Consultas"
+    BEGIN
+        MENUITEM "Máquinas / Órdenes",          ID_CONS_MAQORD
+        MENUITEM "Cambios de Moldes",           ID_CONS_CAMMOL
+        MENUITEM "Lotes",                       ID_CONS_LOTES
+        MENUITEM "OFs Ayer / Hoy",              ID_CONS_OFS
+        MENUITEM "Necesidades de Mezclas",      ID_CONS_MEZ_EXT
+        MENUITEM "Listado Saturaciones",        ID_LISTADO_SATURACIONES
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "&Acerca de cpw...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "A",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "G",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+IDD_LINEA ACCELERATORS
+BEGIN
+    VK_RETURN,      ID_MY_ENTER,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "FileDescription", "Aplicación MFC cpw"
+            VALUE "FileVersion", "2, 0, 0, 1"
+            VALUE "InternalName", "cpw"
+            VALUE "LegalCopyright", "Copyright (C) 2000"
+            VALUE "OriginalFilename", "cpw.EXE"
+            VALUE "ProductName", "Aplicación cpw"
+            VALUE "ProductVersion", "2, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PRINT DLGINIT
+BEGIN
+    IDC_TIPO_LISTADO, 0x403, 8, 0
+0x7247, 0x66e1, 0x6369, 0x006f, 
+    IDC_TIPO_LISTADO, 0x403, 25, 0
+0x7250, 0x676f, 0x6172, 0x616d, 0x6963, 0x6ef3, 0x6420, 0x2065, 0xe14d, 
+0x7571, 0x6e69, 0x7361, "\000" 
+    IDC_TIPO_LISTADO, 0x403, 18, 0
+0x6143, 0x626d, 0x6f69, 0x2073, 0x6564, 0x4d20, 0x6c6f, 0x6564, 0x0073, 
+
+    0
+END
+
+IDD_BUSCAR_ORDEN DLGINIT
+BEGIN
+    IDC_ORDEN, 0x403, 1, 0
+"\000" 
+    IDC_ORDEN, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_LST_MAQ AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ORDEN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "cpw"
+    IDR_CPWTYPE             "\nPrograma\nProgramaciones\nProgramaciones (*.prg)\n.prg\nCpw.Programa\nProgramacion de Cpw"
+    IDS_OF_NOTFOUND         "La pieza %s no está programada"
+    IDS_ERR_CANTEXC         "La cantidad seleccionada es mayor que la de la orden"
+    IDS_CONF_ADDCANT        "¿ Sumar %ld a la cantidad de la orden ?"
+    IDS_CONF_ADDMAQ         "Confirme para añadir al final de la máquina : "
+    IDS_ERR_NOMAQMOL        "No hay moldes para el artículo '%s', o máquinas para sus moldes. Revisar la base de datos."
+    IDS_DLG_ARTICTXT        "Oferta :"
+    IDS_DLG_ARTICIT         "Introducir la oferta a crear"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "cpw"
+    AFX_IDS_IDLEMESSAGE     "Preparado"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Crea un nuevo documento\nNuevo"
+    ID_FILE_OPEN            "Abre un documento ya existente\nAbrir"
+    ID_FILE_CLOSE           "Cierra el documento activo\nCerrar"
+    ID_FILE_SAVE            "Guarda el documento activo\nGuardar"
+    ID_FILE_SAVE_AS         "Guarda el documento activo con un nuevo nombre\nGuardar como"
+    ID_FILE_PAGE_SETUP      "Cambia las opciones de impresión\nPreparar página"
+    ID_FILE_PRINT_SETUP     "Cambia las opciones de impresora y de impresión\nConfigurar impresora"
+    ID_FILE_PRINT           "Imprime el documento activo\nImprimir"
+    ID_FILE_PRINT_PREVIEW   "Muestra páginas completas\nPresentación preliminar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Muestra información del programa, número de versión y copyright\nAcerca de"
+    ID_APP_EXIT             "Sale de la aplicación; le pide que guarde los documentos\nSalir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Abre este documento"
+    ID_FILE_MRU_FILE2       "Abre este documento"
+    ID_FILE_MRU_FILE3       "Abre este documento"
+    ID_FILE_MRU_FILE4       "Abre este documento"
+    ID_FILE_MRU_FILE5       "Abre este documento"
+    ID_FILE_MRU_FILE6       "Abre este documento"
+    ID_FILE_MRU_FILE7       "Abre este documento"
+    ID_FILE_MRU_FILE8       "Abre este documento"
+    ID_FILE_MRU_FILE9       "Abre este documento"
+    ID_FILE_MRU_FILE10      "Abre este documento"
+    ID_FILE_MRU_FILE11      "Abre este documento"
+    ID_FILE_MRU_FILE12      "Abre este documento"
+    ID_FILE_MRU_FILE13      "Abre este documento"
+    ID_FILE_MRU_FILE14      "Abre este documento"
+    ID_FILE_MRU_FILE15      "Abre este documento"
+    ID_FILE_MRU_FILE16      "Abre este documento"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Cambia a la siguiente sección de ventana\nSiguiente sección"
+    ID_PREV_PANE            "Vuelve a la sección de ventana anterior\nSección anterior"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Abre otra ventana para el documento activo\nNueva ventana"
+    ID_WINDOW_ARRANGE       "Organiza los iconos en la parte inferior de la ventana\nOrganizar iconos"
+    ID_WINDOW_CASCADE       "Organiza las ventanas de modo que se superpongan\nVentanas en cascada"
+    ID_WINDOW_TILE_HORZ     "Organiza las ventanas como mosaicos que no se superponen\nVentanas en mosaico"
+    ID_WINDOW_TILE_VERT     "Organiza las ventanas como mosaicos que no se superponen\nVentanas en mosaico"
+    ID_WINDOW_SPLIT         "Divide la ventana activa en secciones\nDividir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Borra la selección\nBorrar"
+    ID_EDIT_CLEAR_ALL       "Borra todo\nBorrar todo"
+    ID_EDIT_COPY            "Copia la selección y la coloca en el portapapeles\nCopiar"
+    ID_EDIT_CUT             "Corta la selección y la coloca en el portapapeles\nCortar"
+    ID_EDIT_FIND            "Buscaa el texto especificado\nBuscar"
+    ID_EDIT_PASTE           "Inserta el contenido del portapapeles\nPegar"
+    ID_EDIT_REPEAT          "Repite la última acción\nRepetir"
+    ID_EDIT_REPLACE         "Reemplaza texto específico por otro texto\nReemplazar"
+    ID_EDIT_SELECT_ALL      "Selecciona todo el documento\nSeleccionar todo"
+    ID_EDIT_UNDO            "Deshace la última acción\nDeshacer"
+    ID_EDIT_REDO            "Rehace la acción que acaba de deshacerse\nRehacer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Muestra u oculta la barra de herramientas\nAlternar Barra de herramientas"
+    ID_VIEW_STATUS_BAR      "Muestra u oculta la barra de estado\nAlternar Barra de estado"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Cambia el tamaño de la ventana"
+    AFX_IDS_SCMOVE          "Cambia la posición de la ventana"
+    AFX_IDS_SCMINIMIZE      "Reduce la ventana a un icono"
+    AFX_IDS_SCMAXIMIZE      "Agranda la ventana al tamaño completo"
+    AFX_IDS_SCNEXTWINDOW    "Cambia a la ventana del siguiente documento"
+    AFX_IDS_SCPREVWINDOW    "Cambia a la ventana del documento anterior"
+    AFX_IDS_SCCLOSE         "Cierra la ventana activa y le pide que guarde los documentos"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaura la ventana a su tamaño normal"
+    AFX_IDS_SCTASKLIST      "Activa la lista de tareas"
+    AFX_IDS_MDICHILD        "Activa esta ventana"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Cierra el modo de presentación preliminar\nCancelar presentación preliminar"
+    IDS_CONF_BORRORD        "¿ Desea borrar la orden actual ?"
+    IDS_CONF_CAPTION        "Confirmación"
+    IDS_ERROR               "Error"
+    IDS_ERR_MOVGFH          "No se puede mover a otro GFH"
+    IDS_WAR_MAQNOP          "Está moviendo a una máquina no definida para este molde"
+    IDS_WARNING             "Aviso"
+    IDS_GFHNOP              "Está moviendo a un GFH no permitido para esta orden"
+    IDS_ERR_MOVNUM          "Error de número al mover."
+    IDS_DLG_PERSON          "PERSONAS"
+    IDS_DLG_PERDES          "Personas destinadas :"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CARGAINICIAL         "Carga ordenes del exterior al programa"
+    ID_BUSCAR_ORDEN         "Busca orden por número"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_PERMAX          "Las personas no pueden exceder de las personas máximas \n para esa orden."
+    IDS_ERR_NOACT           "No se puede actualizar la base de datos"
+    IDS_ERR_NOID            "No existe la OF con Articulo '%s' en la base de datos"
+    IDS_ERR_NOART           "No existe el Articulo '%s' en la base de datos "
+    IDS_ERR_NOGFHART        "No hay registros de GFH para el articulo '%s'"
+    IDS_ERR_NOMAQ           "No existe la maquina '%s' en la base de datos"
+    IDS_ERR_NOMAQNOM        "No puede haber dos máquinas con el mismo nombre ("
+    IDS_ERR_NORECSEL        "No hay ningún registro seleccionado."
+    IDS_ERR_NOMODOF         "No puedo modificar la tabla de Bloques"
+    IDS_ERR_NOMODCAL        "No puedo modificar la tabla de calendario"
+    IDS_ERR_NODB            "Hay algún problema con la base de datos "
+    IDS_ERR_NOOPENFILE      "No se puede abrir el fichero : "
+    IDS_ERR_NOMAQPROG       "No existe la máquina "
+    IDS_CONF_SUBSOF         "La orden %ld ya está cargada. ¿Sustituir?\n(Cancelar hace que no siga cargando más ordenes)"
+    IDS_CONF_ADVINI         "Va a avanzar la fecha de inicio de la programación."
+    IDS_DEF_EXT             "*.prg"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CAMBIAR_FECHA_INICIO "Cambia la fecha de inicio del programa para las máqui"
+    ID_VERIF_STRUCT         "Verifica que no haya ordenes incompletas a partir de 10 días\nLinterna"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DEF_OPENDLG         "Programas (*.prg)|*.prg|Todos los ficheros (*.*)|*.*||"
+    IDS_ERR_NOREC           "No se ha encontrado el registro de la BD"
+    IDS_ERR_NOORDSEL        "No hay ninguna orden seleccionada"
+    IDS_ERR_ORDNOTF         "Orden no encontrada"
+    IDS_ERR_OFNOOM          "OF existe pero no tiene OM's asociadas"
+    IDS_CONF_MAQNOVAC       "La Máquina no está vacía. ¿Borrar?."
+    IDS_WAR_NOINS           "Esa máquina ya está en el programa. No se insertará."
+    IDS_WAR_INSJUN          "Hay que insertar las máquinas de un mismo GFH juntas. La máquina no se insertó."
+    IDS_ERR_NOMOV           "No se puede mover. Ya es la primera de su GFH."
+    IDS_ERR_NOMOVULT        "No se puede mover. Ya es la última de su GFH."
+    IDS_ERR_PROGNOVAC       "El programa no está vacío. Debe estarlo para poder cargar un programa nuevo."
+    IDS_ERR_CANTMENOR       "La cantidad fabricada ha de ser menor que la de la Orden."
+    IDS_ERR_FECFABMAY       "Fecha de Fabricación ha de ser mayor que la de inicio de la Orden."
+    IDS_ERR_NOMAQID         "No existe la máquina con ID "
+    IDS_ERR_NOOMENPM        "No existe la orden en la máquina "
+    IDS_ERR_CANTNOVAL       "La Cantidad no es válida."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_NOMAQAB         "No hay máquinas programables."
+    IDS_WAR_NOINSOM         "La orden %ld (%s) no ha podido ser insertada al estar limitada en TODAS las máquinas del GFH"
+    IDS_ERR_NOMAQGFH        "No hay máquinas en ese GFH."
+    IDS_ERR_OFINC           "Orden : %ld (%s) incompleta."
+    IDS_ERR_NOOMINC         "No hay órdenes incompletas a partir del %s."
+    IDS_DLG_CANTTIT         "Cantidad de la nueva orden"
+    IDS_DLG_CANTTXT         "Cantidad a separar:"
+    IDS_ERR_MOLNOTFOUND     "No se ha cambiado. No existe el molde : "
+    IDS_ERR_ARTNOEX         "No existe el código "
+    IDS_CONF_ACTLIMIT       "¿ Añadir el molde %s a la máquina %s en la Base de Datos ?"
+    IDS_CONF_DESC           "Va a descontar piezas del listado valorado y avanzar las máquinas afectadas hasta la fecha elegida. Confirmar."
+    IDS_DEF_EXT_PED         "*.pcp"
+    IDS_ERR_ARTNOMEZCLA     "El artículo %s no tiene mezcla. %s"
+    IDS_ERR_ARTNOMOLDE      "El artículo %s no tiene moldes asociados. %s"
+    IDS_ERR_MOLNOEXISTE     "El molde %s no existe en la tabla de moldes (se le referncia en el artículo %s)"
+    IDS_ERR_MOLNOMAQ        "El molde % no se puede fabricar en ninguna máquina. %s"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OF_ORDEN             "Ordenación de las Órdenes de Fabricación"
+    ID_NEXT_PAGE            "Avanza una página\nAv Pág"
+    ID_PREV_PAGE            "Retrocede una página\nRe Pág"
+    ID_NEXT_ART             "Avanza hasta la siguiente oferta\nAv Oferta"
+    ID_PREV_ART             "Retrocede hasta la oferta anterior\nRe Oferta"
+    ID_NEXT_SECCION         "Avanza hasta la siguiente sección\nAv Sección"
+    ID_PREV_SECCION         "Retrocede hasta la sección previa\nRe Sección"
+    ID_SOLONOPROG           "Mostrar sólo a partir de la última órden completamente programada"
+    ID_OF_HASTAFECHA        "Seleccionar hasta qué fecha mostrar las OFs"
+    ID_CAMBIAR_FECHA_FIN    "Cambia la fecha de fin del programa"
+    ID_ORDENAR_MAQUINAS     "Ordena las máquinas por orden de código"
+    ID_OFSAYERHOY           "Comparación entre los pedidos no cubiertos de ayer y hoy"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INI_CODERR          "<META> Inicio códigos de error"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FIN_CODERR          "<META> Fin códigos error"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RELOAD_DB            "Vuelve a cargar los datos de la base de datos Access"
+    ID_EXEC_DB              "Ejecuta la actualización de producción del día anterior"
+    ID_EXEC_MEZCLAS         "Introducir las mezclas en planta"
+    ID_EXEC_SEGUNDO         "Ejecuta la actualización de pedidos y artículos"
+    ID_BUTTON32826          "Introducir los cambios de moldes"
+    ID_MOLDES_EX            "Introducir los cambios de moldes"
+    ID_BUTTON32829          "Escala amplia"
+    ID_ESCALA_ESTRECHA      "Escala Estrecha"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CONS_MEZEXT          "Consulta-Listado de Necesidades Externas de Mezclas"
+    ID_ARCHIVO_GUARDARCONPEDIDOS 
+                            "Abre un programa con los pedidos del día que se guardó"
+    ID_ARCHIVO_ABRIRCONPEDIDOS 
+                            "Abre un programa con los pedidos del día que se guardó"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_MOLMAQNOEXISTE  "El molde %s no existe en la tabla de moldes (se le referencia en la máquina %s)"
+    IDS_ERR_MOLDENOART      "El molde %s no tiene artículos asociados. %s"
+    IDS_ERR_OFNOART         "Hay pedidos para la referencia %s pero no existe. %s"
+    IDS_DEF_OPENDLG_PED     "Programas con pedidos (*.pcp)|*.pcp|Todos los ficheros (*.*)|*.*||"
+    IDS_WAR_NOCAD           "Está moviendo a una máquina no definida para este artículo."
+END
+
+STRINGTABLE
+BEGIN
+    IDD_EXCEL               "Exporta el programa a Excel"
+END
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif
+#include "res\cpw.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#include "l.esp\afxprint.rc"        // printing/print preview resources
+#include "l.esp\afxdb.rc"           // Database resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
