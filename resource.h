@@ -211,6 +211,8 @@
 #define IDC_RICHEDIT5                   1132
 #define IDC_MOLDE_DETALLE               1132
 #define IDC_RICHEDIT6                   1133
+#define IDC_LIST1                       1133
+#define IDC_LISTCTRL_COMPONENTES        1133
 #define ID_TEST                         32771
 #define ID_ESCALA                       32772
 #define ID_CARGAINICIAL                 32773
@@ -345,7 +347,7 @@
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        174
 #define _APS_NEXT_COMMAND_VALUE         32841
-#define _APS_NEXT_CONTROL_VALUE         1133
+#define _APS_NEXT_CONTROL_VALUE         1134
 #define _APS_NEXT_SYMED_VALUE           143
 #endif
 #endif

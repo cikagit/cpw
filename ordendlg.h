@@ -132,9 +132,9 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 public:
-	CListBox m_LstComponentes;
 	CListBox m_LstMoldeDetalle;
 	afx_msg void OnCbnSelchangeMolde();
+	CListCtrl m_ListCtrl_Componentes;
 };
 
 /////////////////////////////////////////////////////////////////////////////

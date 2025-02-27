@@ -121,3 +121,4 @@ bool FileExists(const CString& p_sNomFichero);
 void StringArrayPutElement(CObArray& p_Arr, int p_row, int p_col, CString& p_sVal);
 
 int FindInObArray(CObArray& p_PMArr, CObject* p_pObj);
+

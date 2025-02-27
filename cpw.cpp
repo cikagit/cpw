@@ -149,7 +149,7 @@ BOOL CCpwApp::InitInstance()
 
 	// Obtenemos el directorio y el nombre de la base de datos
 	CString sDbDir, sDbName, sDb;
-	sDbDir = GetProfileString("Base de Datos Cikautxo", "Directorio", "J:\\cpw\\" + g_sEmpresa + "\\datos");
+	sDbDir = GetProfileString("Base de Datos Cikautxo", "Directorio", "J:\\cpw\\" + g_sEmpresa);
 	sDbName = GetProfileString("Base de Datos Cikautxo", "Nombre", "cikadat.accdb");
 	WriteProfileString("Base de Datos Cikautxo", "Directorio", sDbDir);
 	WriteProfileString("Base de Datos Cikautxo", "Nombre", sDbName);

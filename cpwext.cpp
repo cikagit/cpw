@@ -695,3 +695,5 @@ StringArrayPutElement(CObArray& p_Arr, int p_row, int p_col, CString& p_sVal)
 	CStringArray* pStrArr = (CStringArray*) p_Arr.GetAt(p_row);
 	pStrArr->SetAt(p_col, p_sVal);
 }
+
+

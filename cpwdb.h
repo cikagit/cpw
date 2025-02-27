@@ -1175,6 +1175,7 @@ public:
 	CString	m_articulo;
 	CString m_componente;
 	double	m_cantidad;
+	double  m_stock;
 	//}}AFX_FIELD
 
 
@@ -1202,13 +1203,12 @@ public:
 	CString	m_sArticulo;
 	CString	m_sComponente;
 	double	m_dCantidad;
+	double  m_dStock;
 
 	CBufArticulo* m_pBufArticulo;
 	// Implementation
 protected:
 	DECLARE_DYNAMIC(CBufComponentes)
-
-	CString GetsInfo();
 
 };
 

@@ -2039,7 +2039,8 @@ CRsComponentes::CRsComponentes(CDatabase* pdb)
 	m_articulo = _T("");
 	m_componente = _T("");
 	m_cantidad = 0.0;
-	m_nFields = 3;
+	m_stock = 0.0;
+	m_nFields = 4;
 	//}}AFX_FIELD_INIT
 	m_nDefaultType = snapshot;
 }
@@ -2062,6 +2063,7 @@ void CRsComponentes::DoFieldExchange(CFieldExchange* pFX)
 	RFX_Text(pFX, _T("[Articulo]"), m_articulo);
 	RFX_Text(pFX, _T("[Componente]"), m_componente);
 	RFX_Double(pFX, _T("[Cantidad]"), m_cantidad);
+	RFX_Double(pFX, _T("[stock]"), m_stock);
 	//}}AFX_FIELD_MAP
 }
 
@@ -2093,20 +2095,10 @@ CBufComponentes::CBufComponentes(CRsComponentes& p_RsComponentes)
 	m_sComponente = p_RsComponentes.m_componente;
 	if (p_RsComponentes.IsFieldNull(&p_RsComponentes.m_cantidad)) m_dCantidad = 0;
 	else m_dCantidad = p_RsComponentes.m_cantidad;
+	if (p_RsComponentes.IsFieldNull(&p_RsComponentes.m_stock)) m_dStock = 0;
+	else m_dStock = p_RsComponentes.m_stock;
 
 	m_pBufArticulo = NULL;
-}
-
-CString
-CBufComponentes::GetsInfo()
-{
-	
-	CString sTemp;
-	sTemp.Format("%-12.12s [%-8.8s]",
-		m_sComponente,
-		FormatDbl(m_dCantidad, 6, 2)
-	);
-	return sTemp;
 }
 
 

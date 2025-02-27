@@ -27,6 +27,22 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+static void AddData(CListCtrl& ctrl, int row, int col, const char* str)
+{
+
+	LVITEM lv;
+
+	lv.iItem = row;
+	lv.iSubItem = col;
+	lv.pszText = (LPSTR)str;
+	lv.mask = LVIF_TEXT;
+
+	if (col == 0)
+		ctrl.InsertItem(&lv);
+	else
+		ctrl.SetItem(&lv);
+
+}
 /////////////////////////////////////////////////////////////////////////////
 // COrdenDlg dialog
 
@@ -146,8 +162,8 @@ void COrdenDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_CADENCIA_ACABADO, m_sCadenciaAcabado);
 	DDX_Text(pDX, IDC_PERSONAS, m_sPersonas);
 	//}}AFX_DATA_MAP
-	DDX_Control(pDX, IDC_COMPONENTES, m_LstComponentes);
 	DDX_Control(pDX, IDC_MOLDE_DETALLE, m_LstMoldeDetalle);
+	DDX_Control(pDX, IDC_LISTCTRL_COMPONENTES, m_ListCtrl_Componentes);
 }
 
 
@@ -175,7 +191,14 @@ BOOL COrdenDlg::OnInitDialog()
 	CDialog::OnInitDialog();
 	ASSERT_VALID(m_pOM);
 	
-	
+	m_ListCtrl_Componentes.InsertColumn(0, "Componente");
+	m_ListCtrl_Componentes.SetColumnWidth(0, 100);
+	m_ListCtrl_Componentes.InsertColumn(1, "Cant.", LVCFMT_RIGHT);
+	m_ListCtrl_Componentes.SetColumnWidth(1, 50);
+	m_ListCtrl_Componentes.InsertColumn(2, "Stock", LVCFMT_RIGHT);
+	m_ListCtrl_Componentes.SetColumnWidth(2, 80);
+
+
 	// Si no esta ya hacemos una lista de maquinas a las que puede ir
 	g_pCache->GetArrMaq(m_pOM->GetsID(), m_ArrListaMaq, m_ArrListaMoldes);
 	int iLimListaMaq = m_ArrListaMaq.GetSize();
@@ -219,7 +242,9 @@ BOOL COrdenDlg::OnInitDialog()
 	for (int i = 0; i < m_ArrComponentes.GetSize(); i++)
 	{
 		CBufComponentes* pBufAc = (CBufComponentes*)m_ArrComponentes.GetAt(i);
-		m_LstComponentes.AddString(pBufAc->GetsInfo());
+		AddData(m_ListCtrl_Componentes, i, 0, pBufAc->m_sComponente);
+		AddData(m_ListCtrl_Componentes, i, 1, FormatLong((long) pBufAc->m_dCantidad, 7));
+		AddData(m_ListCtrl_Componentes, i, 2, FormatLong((long) pBufAc->m_dStock, 12));
 	}
 	
 	RefreshMoldeDetalle();
@@ -763,7 +788,8 @@ END_MESSAGE_MAP()
 BOOL CDlgAjustar::OnInitDialog() 
 {
 	CDialog::OnInitDialog();
-	
+
+
 	m_SpinRatio.SetRange32(0,99999);
 	m_SpinRatio.SetAccel(1, &m_UdAcRatio);
 
